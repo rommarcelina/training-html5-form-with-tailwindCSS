@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script>
+      const check = (event) => {
+        const form = new FormData(event.target);
+
+        console.log(form);
+
+        return false;
+      };
+    </script>
+
+    <form>
+      <h1 class="title">Your details</h1>
+
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="First and last name" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">E-mail</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="example@domain.com" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Phone</label>
+        <div class="control">
+          <input class="input" type="tel" placeholder="Eg. +447500000000" />
+        </div>
+      </div>
+
+      <h1 class="title">Delivery details</h1>
+
+      <div class="field">
+        <label class="label">Address</label>
+        <div class="control">
+          <textarea class="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Post code</label>
+        <div class="control">
+          <input class="input" type="text" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Country</label>
+        <div class="control">
+          <input class="input" type="text" />
+        </div>
+      </div>
+
+      <h1 class="title">Card details</h1>
+
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer" />
+          VISA
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer" />
+          AmEx
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Master Card
+        </label>
+      </div>
+
+      <div class="field">
+        <label class="label">Card number</label>
+        <div class="control">
+          <input class="input" type="text" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Security code</label>
+        <div class="control">
+          <input class="input" type="text" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Card number</label>
+        <div class="control">
+          <input class="input" type="text" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Name on card</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Exact name as on the card"
+          />
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <button class="button is-primary">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
