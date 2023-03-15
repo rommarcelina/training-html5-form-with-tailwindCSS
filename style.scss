@@ -7,8 +7,15 @@ $minTabletWidht: 450px;
   color: black;
 }
 
-.form-group {
+form {
+  margin: auto;
   @media screen and (min-width: $minTabletWidht) {
+    width: 50%;
+  }
+  @media screen and (min-width: 380px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1260px) {
     width: 50%;
   }
 }
